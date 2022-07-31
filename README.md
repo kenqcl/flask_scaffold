@@ -14,8 +14,9 @@ Chapter 7 Large Application Structure
   - `python -m venv venv --prompt flask`
   - `venv\Scripts\activate`
   - `python -m pip install pip --upgrade`
-- Install packages `pip install -r requirements.txt` 
+- Install packages `pip install -r requirements.txt`
 - set env `FLASK_APP="flask_app"`, `FLASK_ENV="development"`
+- Upgrade DB `flask db upgrade`
 - Run `flask run`
 
 ### Project Structure
