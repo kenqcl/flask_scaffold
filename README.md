@@ -1,10 +1,12 @@
 # Flask Project Scaffold
 
+Copy of code from this book
+
 ![book](book.jpg)
 
-## [Flask Web Development, 2nd - O'Reilly 2018](https://www.amazon.com/Flask-Web-Development-Developing-Applications/dp/1491991739/)
+[Flask Web Development, 2nd - O'Reilly 2018](https://www.amazon.com/Flask-Web-Development-Developing-Applications/dp/1491991739/)
 
-Chapter 7 Large Application Structure
+Chapter 7 "Large Application Structure"
 
 ## Usage
 
