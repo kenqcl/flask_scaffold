@@ -1,0 +1,60 @@
+{% import "macros/navbar.html" as macros%}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block meta %}
+            <!-- extra meta -->
+        {% endblock meta%}
+
+        <!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+
+        {% block styles %}
+            <!-- extra CSS -->
+        {% endblock %}
+
+        <title>
+            {% block title %}
+            Flask App
+            {% endblock title %}
+        </title>
+        {% endblock head %}
+    </head>
+    <body>
+
+        {% block navbar %}
+        <!-- navbar -->
+        {{ macros.navbar_snip() }}
+        {% endblock navbar %}
+
+        <!-- Your page content -->
+        {% block content %}
+        <div class="container">
+            <!-- flash message -->
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-warning" role="alert">
+                <button type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="alert" 
+                        aria-label="Close">
+                </button>
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% block page_content %}
+            {% endblock page_content %}
+        </div>
+        {% endblock content %}
+
+        <!-- bootstrap js -->
+        {{ bootstrap.load_js() }}
+        {% block script %}
+            <!-- Optional JavaScript -->
+        {% endblock script %}
+    </body>
+</html>
