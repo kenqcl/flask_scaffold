@@ -51,7 +51,8 @@ FILES = [
     ["tests", "__init__.py"],
     ["requirements.txt"],
     ["config.py"],
-    ["flask_app.py"]
+    ["flask_app.py"],
+    ['.gitignore']
 ]
 
 def get_proj_home(home):
